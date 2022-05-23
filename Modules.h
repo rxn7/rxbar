@@ -3,7 +3,8 @@
 
 static const ModuleInfo moduleInfos[] = {
 	// icon, command, interval(ms)
-	{" ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	5000},
-	{" ", "date '+%b %d (%a)'",						60000},
-	{" ", "date '+%T'", 1000},
+	{"", "pamixer --get-volume | sed s/$/%/g", 50},
+	{"", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g", 5000},
+	{"", "date '+%b %d (%a)'", 60000},
+	{"", "date '+%T'", 1000},
 };

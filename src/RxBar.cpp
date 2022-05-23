@@ -44,7 +44,7 @@ void StatusLoop() {
 	while(continueStatusLoop) {
 		UpdateOutputs();
 		WriteStatus();
-		usleep(1000);
+		usleep(10000);
 	}
 }
 
