@@ -1,13 +1,14 @@
 #include <sstream>
 #include <iostream>
 #include <chrono>
-#include <X11/Xlib.h>
 #include <signal.h>
+#include <X11/Xlib.h>
 
 #include "Modules.h"
 
 #define MAX_OUTPUT_LENGTH 32
 #define ERROR(msg) std::cout << "rxstatus error: " << (msg) << "\n"
+
 static constexpr uint32_t MODULE_COUNT = sizeof(moduleInfos) / sizeof(ModuleInfo);
 
 static Display *display;
