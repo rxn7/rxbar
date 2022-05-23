@@ -69,7 +69,7 @@ bool UpdateStatusStream() {
 			statusStream << "   ";
 	}
 
-	return statusStream.str() == lastStatusText;
+	return statusStream.str() != lastStatusText;
 }
 
 void UpdateOutputs() {
